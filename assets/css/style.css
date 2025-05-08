@@ -28677,7 +28677,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #081D0D;
+  color: #F8863A;
   letter-spacing: 0.5px;
 }
 
@@ -28714,7 +28714,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .testimonial-author {
   font-weight: 600;
   font-size: 16px;
-  color: #0b4d1a;
+  color: #79B344;
 }
 
 .testimonial-nav {
@@ -28722,7 +28722,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .testimonial-nav button {
-  background-color: #0b4d1a;
+  background-color: #79B344;
   color: #fff;
   border: none;
   font-size: 20px;
@@ -28873,4 +28873,25 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 .title-area-between h2{
   color: #F8863A;
+}
+
+.footer-two-main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+
+@media (max-width: 991px) {
+  .footer-two-main-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer-single-wixed-two,
+  .single-footer-wized {
+      width: 100%;
+  }
 }
