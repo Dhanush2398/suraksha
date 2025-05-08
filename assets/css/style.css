@@ -28842,7 +28842,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .logo-area2 img{
   height: 150px;
-  width: 200px;
+  width: auto;
 }
 
 .banner-bg-image {
