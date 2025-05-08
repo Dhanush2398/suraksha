@@ -860,9 +860,51 @@
     zoomer.style.backgroundPosition = x + '% ' + y + '%';
   }
 
+  const testimonials = document.querySelectorAll(".testimonial");
+  const prevBtn = document.getElementById("testimonial-prev");
+  const nextBtn = document.getElementById("testimonial-next");
+  let currentIndex = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.toggle("active", i === index);
+    });
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+    showTestimonial(currentIndex);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  });
+
+  
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  }, 3000);
+
+  showTestimonial(currentIndex);
 
 
 
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  document.querySelectorAll('.feature-card').forEach(card => {
+    card.style.animationPlayState = 'paused';
+    observer.observe(card);
+  });
 
 
 
