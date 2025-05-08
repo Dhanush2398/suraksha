@@ -352,7 +352,7 @@ p {
   line-height: var(--line-height-b2);
   font-weight: var(--p-regular);
   color: var(--color-body);
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -410,9 +410,6 @@ p.b3 {
   line-height: var(--line-height-b3);
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
 
 .b1 {
   font-size: var(--font-size-b1);
@@ -15120,6 +15117,7 @@ body.sal-disabled [data-sal|=flip] {
 .about-content-area-1 .title {
   font-size: 40px;
   margin-bottom: 40px;
+  color: #F8863A;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -15142,12 +15140,14 @@ body.sal-disabled [data-sal|=flip] {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
+  color: #000;
 }
 
 .about-content-area-1 .check-main-wrapper .single-check-area {
   padding: 7px 0;
   padding-left: 25px;
   position: relative;
+  color: #000;
 }
 
 .about-content-area-1 .check-main-wrapper .single-check-area::after {
@@ -17223,11 +17223,11 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .bg_one-banner {
-  background-image: url(../images/banner/01.webp);
+  background-image: url(../images/banner/banner1.png);
 }
 
 .bg_one-banner.two {
-  background-image: url(../images/banner/08.webp);
+  background-image: url(../images/banner/banner2.webp);
 }
 
 .category-area-main-wrapper-one {
@@ -17244,8 +17244,9 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .banner-one-inner-content .pre {
-  color: #FFE884;
+  color: #9bf904;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .banner-one-inner-content .title {
@@ -18177,7 +18178,7 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .rts-btn.btn-primary {
-  background: #629D23;
+  background: #F8863A;
   border-radius: 6px;
   display: block;
   max-width: max-content;
@@ -18219,7 +18220,7 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .rts-btn.with-icon:hover {
-  background: #2c3c28;
+  background: #79B344;
 }
 
 .rts-btn.with-icon:hover .btn-text {
@@ -28756,7 +28757,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .section-title {
   font-size: 2.5rem;
-  color: #084c3b;
+  color: #F8863A;
   margin-bottom: 10px;
 }
 
@@ -28787,19 +28788,19 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .feature-card .icon {
   font-size: 36px;
-  color: #0a7b5a;
+  color: #79B344;
   margin-bottom: 15px;
 }
 
 .feature-card h3 {
   font-size: 1.25rem;
-  color: #084c3b;
+  color: #F8863A;
   margin-bottom: 10px;
 }
 
 .feature-card p {
-  font-size: 0.95rem;
-  color: #4d665f;
+  font-size: 1.00rem;
+  color:#000;
   line-height: 1.6;
 }
 
@@ -28842,4 +28843,34 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .logo-area2 img{
   height: 150px;
   width: 200px;
+}
+
+.banner-bg-image {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); 
+  z-index: 1;
+}
+
+
+.banner-one-inner-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.thumbnail-left img{
+  height: 300px;
+}
+.title-area-between h2{
+  color: #F8863A;
 }
