@@ -28910,7 +28910,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 @media only screen and (max-width: 767px) {
   .banner-bg-image {
-      min-height: 300px; 
+      max-height: 380px; 
       background-size: cover;
       background-position: center;
   }
