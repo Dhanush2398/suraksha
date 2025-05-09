@@ -728,23 +728,23 @@ ol ul {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap2 {
-    padding: 100px 0;
+    padding: 10px 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .rts-section-gap2 {
-    padding: 100px 0;
+    padding: 10px 0;
   }
 }
 
 .rts-section-gap2Bottom {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap2Bottom {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
   }
 }
 
